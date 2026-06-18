@@ -556,6 +556,20 @@ body {
   display: block;
 }
 
+.project-preview {
+  margin-top: 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.project-preview img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: block;
+  background: #fff;
+}
+
 .metric__label {
   display: block;
   font-size: 0.75rem;

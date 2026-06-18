@@ -13,6 +13,7 @@ I'm a Computer Science student at the University of Missouri focused on data ana
 | Project | Tools | Highlights |
 |---------|-------|------------|
 | [Retail Analytics Platform](https://github.com/varshakuchana/retail-analytics-platform) | Python, PostgreSQL, SQL, Tableau | ETL pipelines, revenue analysis, [live Tableau dashboard](https://public.tableau.com/app/profile/varsha.kuchana/viz/RetailAnalyticsPlatform/RetailAnalyticsPlatform) |
+| [HR Analytics Dashboard](https://github.com/varshakuchana/hr-analytics-dashboard) | Excel, Pivot Tables, Data Visualization | Employee attrition analysis, KPI cards, workforce retention insights |
 | Driving School Management System | Python, MySQL, SQL | Relational database design, reporting workflows, data validation |
 | [Parking Stall Occupancy Detection](https://github.com/varshakuchana/Parking-Lot-Project) | Python, OpenCV, NumPy | Computer vision pipeline, CSV reporting outputs |
 | iFINANCE Web Application | ASP.NET MVC, C#, SQL Server | Financial reporting, normalized schemas, role-based access |
@@ -52,5 +53,5 @@ I'm a Computer Science student at the University of Missouri focused on data ana
 ├── index.html                  # Portfolio page
 ├── styles.css                  # Styling
 ├── script.js                   # Navigation & animations
-└── Varsha_Kuchana_Resume.pdf   # Downloadable resume
+└── Varsha_Kuchana_Analyst_Resume.pdf   # Downloadable resume
 ```
