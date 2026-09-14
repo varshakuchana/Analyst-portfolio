@@ -53,5 +53,5 @@ I'm a Computer Science student at the University of Missouri focused on data ana
 ├── index.html                  # Portfolio page
 ├── styles.css                  # Styling
 ├── script.js                   # Navigation & animations
-└── Varsha_Kuchana_Analyst_Resume.pdf   # Downloadable resume
+└── Data_Analyst.pdf                    # Downloadable resume
 ```
