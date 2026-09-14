@@ -438,6 +438,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+  align-items: start;
 }
 
 .project-card {
@@ -459,6 +460,10 @@ body {
   grid-column: 1 / -1;
   background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
   border-color: rgba(6, 182, 212, 0.2);
+}
+
+.project-card--wide {
+  grid-column: 1 / -1; /* Full-width row for cards with large previews */
 }
 
 .project-card__badge {
@@ -501,8 +506,21 @@ body {
 
 .project-card__desc {
   color: var(--text-secondary);
-  margin-bottom: 16px;
+  margin-bottom: 0;
   line-height: 1.6;
+}
+
+/* Expandable details — hidden by default; toggled via script.js */
+.project-card__details {
+  margin-top: 16px;
+}
+
+.project-card__details[hidden] {
+  display: none;
+}
+
+.project-card__toggle {
+  margin-top: 16px;
 }
 
 .project-card__highlights {
@@ -895,7 +913,8 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .project-card--featured {
+  .project-card--featured,
+  .project-card--wide {
     grid-column: auto;
   }
 }

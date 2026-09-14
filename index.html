@@ -12,13 +12,20 @@
   <meta property="og:title" content="Varsha Kuchana | Data &amp; Business Analyst Portfolio" />
   <meta property="og:description" content="Data &amp; Business Analyst skilled in SQL, Python, ETL pipelines, and Tableau. Explore retail analytics dashboards, KPI reporting, and database projects." />
   <meta property="og:url" content="https://varshakuchana.github.io/Analyst-portfolio/" />
+  <meta property="og:image" content="https://varshakuchana.github.io/Analyst-portfolio/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Varsha Kuchana — Data and Business Analyst portfolio" />
   <meta property="og:site_name" content="Varsha Kuchana Portfolio" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Varsha Kuchana | Data &amp; Business Analyst Portfolio" />
   <meta name="twitter:description" content="Data &amp; Business Analyst skilled in SQL, Python, ETL pipelines, and Tableau. Explore projects and dashboards." />
+  <meta name="twitter:image" content="https://varshakuchana.github.io/Analyst-portfolio/og-image.png" />
 
   <title>Varsha Kuchana | Data &amp; Business Analyst</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -81,6 +88,7 @@
   </header>
 
   <main>
+    <!-- About -->
     <section class="section about" id="about">
       <div class="container">
         <div class="section__header">
@@ -95,14 +103,15 @@
               but following it all the way to a dashboard someone can make decisions from.
             </p>
             <p>
-              My projects have ranged from building a full retail analytics platform (ETL pipelines,
-              PostgreSQL, Tableau) to HR workforce analysis in Excel. I also did research at the Digital
-              Biology Lab, processing large scale sequencing data for a bioinformatics tool called
-              FASTAptameR, and I currently help students in the CS department as a Peer Learning Assistant.
+              My projects have ranged from an end-to-end airline data warehouse in Python, Snowflake,
+              and Tableau, to a retail analytics platform and HR workforce analysis in Excel. I also did
+              research at the Digital Biology Lab, processing large scale sequencing data for a
+              bioinformatics tool called FASTAptameR, and I currently help students in the CS department
+              as a Peer Learning Assistant.
             </p>
             <p>
-              I write a lot of SQL, work mainly in Python and Tableau, and care about making sure the
-              technical side and the business facing output both hold up.
+              I write a lot of SQL, work mainly in Python, Snowflake, and Tableau, and care about making
+              sure the technical side and the business facing output both hold up.
             </p>
           </div>
           <div class="about__highlights reveal">
@@ -131,6 +140,7 @@
       </div>
     </section>
 
+    <!-- Skills -->
     <section class="section skills" id="skills">
       <div class="container">
         <div class="section__header">
@@ -150,12 +160,14 @@
               <span class="skill-tag">Pandas</span>
               <span class="skill-tag">Data Visualization</span>
               <span class="skill-tag">ETL Concepts</span>
+              <span class="skill-tag">Data Warehousing</span>
               <span class="skill-tag">Reporting</span>
             </div>
           </div>
           <div class="skill-category reveal">
             <h3 class="skill-category__title">Databases</h3>
             <div class="skill-tags">
+              <span class="skill-tag skill-tag--featured">Snowflake</span>
               <span class="skill-tag skill-tag--featured">PostgreSQL</span>
               <span class="skill-tag">MySQL</span>
               <span class="skill-tag">SQL Server</span>
@@ -208,6 +220,7 @@
       </div>
     </section>
 
+    <!-- Projects -->
     <section class="section projects" id="projects">
       <div class="container">
         <div class="section__header">
@@ -220,6 +233,55 @@
         <div class="projects__grid">
           <article class="project-card project-card--featured reveal">
             <div class="project-card__badge">Featured</div>
+            <div class="project-card__header">
+              <h3>U.S. Airline Performance Data Warehouse &amp; Analytics</h3>
+              <div class="project-card__tech">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Snowflake</span>
+                <span>SQL</span>
+                <span>Tableau</span>
+                <span>ETL</span>
+                <span>Data Warehousing</span>
+              </div>
+            </div>
+            <p class="project-card__desc">
+              Built an end-to-end airline analytics platform using Python, Snowflake, SQL, and Tableau to process and analyze 33.6M+ U.S. domestic flight records from 2021–2025. Designed a layered data warehouse, dimensional model, ETL pipeline, and interactive dashboards covering airline, airport, route, delay, and cancellation performance.
+            </p>
+            <ul class="project-card__highlights">
+              <li>Processed 33.65M flight records from 2021–2025</li>
+              <li>Built RAW, STAGING, and ANALYTICS layers in Snowflake</li>
+              <li>Designed a dimensional model with fact and dimension tables</li>
+              <li>Built Python ETL pipelines and Tableau dashboards for airline, airport, route, delay, and cancellation analysis</li>
+            </ul>
+            <div class="project-card__metrics">
+              <div class="metric">
+                <span class="metric__label">Focus</span>
+                <span class="metric__value">Airline Performance Analytics</span>
+              </div>
+              <div class="metric">
+                <span class="metric__label">Stack</span>
+                <span class="metric__value">Python → Snowflake → SQL → Tableau</span>
+              </div>
+            </div>
+            <div class="project-card__links">
+              <a href="https://public.tableau.com/app/profile/varsha.kuchana/viz/USAirlinePerformanceDashboard20212025/ExecutiveSummary" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+                Live Dashboard
+              </a>
+              <a href="https://github.com/varshakuchana/us-airline-performance-data-warehouse" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm">
+                GitHub
+              </a>
+            </div>
+            <div class="project-preview">
+              <img
+                src="images/airline-executive-summary.png"
+                alt="U.S. Airline Performance — Executive Summary Tableau dashboard"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <article class="project-card project-card--wide reveal">
             <div class="project-card__header">
               <h3>Retail Analytics Platform</h3>
               <div class="project-card__tech">
@@ -266,7 +328,7 @@
             </div>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card project-card--wide reveal">
             <div class="project-card__header">
               <h3>HR Analytics Dashboard</h3>
               <div class="project-card__tech">
@@ -311,6 +373,49 @@
                 alt="HR Analytics Dashboard — pivot charts and slicer filters"
                 loading="lazy"
               />
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <h3>MySQL Layoffs Data Analysis</h3>
+              <div class="project-card__tech">
+                <span>MySQL</span>
+                <span>SQL</span>
+                <span>MySQL Workbench</span>
+                <span>Git</span>
+                <span>GitHub</span>
+              </div>
+            </div>
+            <p class="project-card__desc">
+              Cleaned and explored a global layoffs dataset using MySQL, applying staging tables, CTEs, window functions, duplicate removal, data standardization, and time-based analysis.
+            </p>
+            <ul class="project-card__highlights">
+              <li>Created staging tables to preserve raw data during cleaning</li>
+              <li>Identified and removed duplicate records using ROW_NUMBER()</li>
+              <li>Standardized company, industry, country, and date fields</li>
+              <li>Handled NULL and blank values and removed unnecessary records</li>
+              <li>Analyzed layoffs by company, industry, country, year, and company stage</li>
+              <li>Used CTEs and window functions to calculate monthly rolling totals</li>
+              <li>Used DENSE_RANK() to identify companies with the highest layoffs by year</li>
+            </ul>
+            <div class="project-card__metrics">
+              <div class="metric">
+                <span class="metric__label">Focus</span>
+                <span class="metric__value">SQL Cleaning &amp; EDA</span>
+              </div>
+              <div class="metric">
+                <span class="metric__label">Stack</span>
+                <span class="metric__value">MySQL → CTEs → Window Functions</span>
+              </div>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/varshakuchana/mysql-layoffs-data-analysis" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+                View GitHub
+              </a>
+              <a href="https://github.com/varshakuchana/mysql-layoffs-data-analysis/tree/main/sql" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm">
+                View SQL
+              </a>
             </div>
           </article>
 
@@ -379,31 +484,11 @@
               <li>Built data-driven reporting features for financial analysis and transaction management</li>
             </ul>
           </article>
-
-          <article class="project-card reveal">
-            <div class="project-card__header">
-              <h3>LaserPurrrsue: AI Powered Smart Laser Control System</h3>
-              <div class="project-card__tech">
-                <span>Kotlin</span>
-                <span>Jetpack Compose</span>
-                <span>WebSockets</span>
-                <span>Media3</span>
-                <span>Raspberry Pi</span>
-              </div>
-            </div>
-            <p class="project-card__desc">
-              Developed the Android frontend for an AI powered smart laser system with real-time
-              remote monitoring and control.
-            </p>
-            <ul class="project-card__highlights">
-              <li>Built low-latency device communication using WebSockets, Jetpack Compose, and RTSP video streaming with Media3</li>
-              <li>Collaborated on Raspberry Pi backend integration using Flask/FastAPI and OpenCV-based cat detection workflows</li>
-            </ul>
-          </article>
         </div>
       </div>
     </section>
 
+    <!-- Experience -->
     <section class="section experience" id="experience">
       <div class="container">
         <div class="section__header">
@@ -453,6 +538,7 @@
       </div>
     </section>
 
+    <!-- Education -->
     <section class="section education" id="education">
       <div class="container">
         <div class="section__header">
@@ -468,18 +554,11 @@
               <p class="edu-card__meta">Columbia, MO · Aug 2024 – Present</p>
             </div>
           </article>
-          <article class="edu-card reveal">
-            <div class="edu-card__icon">🎓</div>
-            <div class="edu-card__content">
-              <h3>Bachelor's in Computer Science</h3>
-              <p class="edu-card__school">SR International Institute of Tech</p>
-              <p class="edu-card__meta">India · 2022 – 2024</p>
-            </div>
-          </article>
         </div>
       </div>
     </section>
 
+    <!-- Contact -->
     <section class="section contact" id="contact">
       <div class="container">
         <div class="contact__wrapper reveal">

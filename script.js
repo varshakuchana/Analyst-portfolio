@@ -1,4 +1,4 @@
-// Portfolio interactions — navigation, scroll animations, contact form
+// Portfolio interactions — navigation, scroll animations, contact form, project toggles
 const nav = document.getElementById('nav');
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
@@ -74,4 +74,43 @@ contactForm.addEventListener('submit', (e) => {
   );
 
   window.location.href = `mailto:kuchanavarsha1969@gmail.com?subject=${subject}&body=${body}`;
+});
+
+// Project cards — wrap extra content behind a More/Less toggle
+document.querySelectorAll('.project-card').forEach((card, index) => {
+  const desc = card.querySelector('.project-card__desc');
+  if (!desc) return;
+
+  const details = document.createElement('div');
+  details.className = 'project-card__details';
+  details.id = `project-details-${index}`;
+  details.hidden = true;
+
+  // Collapse highlights + metrics; keep links, embeds, and previews visible
+  const collapsible = ['.project-card__highlights', '.project-card__metrics'];
+  collapsible.forEach((selector) => {
+    const el = card.querySelector(selector);
+    if (el) details.appendChild(el);
+  });
+
+  if (!details.children.length) return;
+
+  desc.insertAdjacentElement('afterend', details);
+
+  const toggle = document.createElement('button');
+  toggle.type = 'button';
+  toggle.className = 'project-card__toggle btn btn--outline btn--sm';
+  toggle.setAttribute('aria-expanded', 'false');
+  toggle.setAttribute('aria-controls', details.id);
+  toggle.textContent = 'More';
+  details.insertAdjacentElement('afterend', toggle);
+
+  toggle.addEventListener('click', () => {
+    const willExpand = toggle.getAttribute('aria-expanded') !== 'true';
+
+    toggle.setAttribute('aria-expanded', willExpand);
+    details.hidden = !willExpand;
+    toggle.textContent = willExpand ? 'Less' : 'More';
+    card.classList.toggle('project-card--expanded', willExpand);
+  });
 });
